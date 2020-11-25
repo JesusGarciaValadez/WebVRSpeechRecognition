@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a-scene>
+        <a-sphere position="0 1.25 -5"
+                  radius="1.25"
+                  color="#EF2D5E"></a-sphere>
+        <a-box position="-1 0.5 -3"
+               rotation="0 45 0"
+               width="1"
+               height="1"
+               depth="1"
+               color="#4cc3d9"
+               speech-command__cube="command: move cube; type: attribute; attribute: position; value: -3 1.25 -2"></a-box>
+        <a-cylinder position="1 0.75 -3"
+                    radius="0.5"
+                    height="1.5"
+                    color="#ffc65d"
+                    speech-command__color="command: change color; type: attribute; attribute: color; color: red;"></a-cylinder>
+        <a-plane position="0 0 -4"
+                 rotation="-90 0 0"
+                 width="4"
+                 height="4"
+                 color="#7bc8a4"></a-plane>
+        <a-text value="Hey! How are you"
+                position="0 1.9 -1"
+                color="black"
+                speech-command__text="command: change text; type: attribute; attribute: value; value: This is so fun!"></a-text>
+        <a-entity id="cameraman"
+                  position="0 0 4"
+                  wasd-controls>
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-sky color="#ececec"></a-sky>
+
+        <a-entity id="annyang"
+                  annyang-speech-recognition></a-entity>
+    </a-scene>
+</body>
+</html>
