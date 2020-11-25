@@ -6,6 +6,9 @@
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
     <script src="https://cdn.rawgit.com/lmalave/aframe-speech-command-component/5859588e/dist/aframe-speech-command-component.min.js"></script>
+    <script type="application/javascript">
+        annyang.setLanguage('en-US')
+    </script>
 </head>
 <body>
     <a-scene>
@@ -45,9 +48,5 @@
         <a-entity id="annyang"
                   annyang-speech-recognition></a-entity>
     </a-scene>
-
-    <script type="application/javascript">
-        annyang.setLanguage('en-US')
-    </script>
 </body>
 </html>
